@@ -16,16 +16,121 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/4477ea5b85.js" crossorigin="anonymous"></script>
+    <!-- BoxIcon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-primary{
+                background-color: #E02C6D;
+            }
+            .text-primary{
+                color: #3A3A3A;
+            }
+            .text-secondary{
+                color: #E02C6D;
+            }
+            .font-poppins{
+                font-family: "Poppins",sans-serif;
+            }
+            }
+    </style>
 </head>
 
-<body>
-    <header>
-
+<body class="font-poppins">
+    <header class="w-[95%] md:container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100 p-2 md:p-0 mt-2">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost p-0 md:hidden mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-textprimary">
+                            <li><a>Home</a></li>
+                            <li><a>Products</a></li>
+                            <li><a>Sign up</a></li>
+                            <li><a>Log In</a></li>
+                        </ul>
+                    </div>
+                    <a class="font-bold text-base md:text-2xl text-secondary">Influencer products</a>
+                </div>
+                <div class="navbar-center hidden md:flex gap-8">
+                    <ul class="menu menu-horizontal px-1 text-base font-semibold text-textprimary">
+                        <li><a>Home</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>Sign up</a></li>
+                        <li><a>Log In</a></li>
+                    </ul>
+                </div>
+                <div class="flex gap-8 md:ml-6">
+                    <box-icon name='search-alt' class="hidden md:inline"></box-icon>
+                    <box-icon name='cart-alt'></box-icon>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-
+        <section id="banner" class="w-[95%] md:container mx-auto">
+            <div class="rounded-xl pt-4 md:pt-12">
+                <div class="flex flex-col-reverse md:flex-row p-0 justify-center items-center">
+                    <div class="flex flex-col gap-6 md:w-3/5">
+                        <h1 class="text-2xl md:text-5xl font-bold text-primary text-center md:text-left">Start your
+                            Journey as
+                            <span class="text-secondary">Influencer</span> is Easy!!
+                        </h1>
+                        <p
+                            class="text-sm md:text-base font-semibold font-bangla md:w-[90%] text-primary text-center md:text-left">
+                            Discover the best tools and gear to elevate your content creation journey. From cameras to
+                            accessories, we've got you covered.
+                        </p>
+                        <div class="text-center md:text-left">
+                            <button
+                                class="btn bg-primary text-white mt-5 hover:bg-[#a11448] rounded-3xl text-sm md:text-base font-bold">Get
+                                Preebook now <box-icon name='right-arrow-alt' color="#FFFFFF"></box-icon></button>
+                        </div>
+                    </div>
+                    <div class="w-[80%] md:w-2/5 bg-[url(images/circle_design.svg)] bg-no-repeat bg-center bg-cover">
+                        <img src="images/main-camera.png" class="mx-auto" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="brands" class="w-[95%] md:container mx-auto">
+            <div class="mt-12 md:mt-24">
+                <hr class="hidden md:block my-5 bg-linear-to-r from-white via-[#ccc] to-white border-none h-[1.2px]">
+                <div class="flex justify-center items-center flex-wrap gap-4 md:gap-10">
+                    <img src="logos/Alibaba.svg" alt="" class="">
+                    <img src="logos/Amazon.svg" alt="" class="">
+                    <img src="logos/Daraz.svg" alt="" class="">
+                    <img src="logos/Ebay.svg" alt="" class="">
+                    <img src="logos/Rakuten.svg" alt="" class="">
+                    <img src="logos/Target.svg" alt="" class="">
+                    <img src="logos/Walmart.svg" alt="" class="">
+                </div>
+                <hr class="hidden md:block my-5 bg-linear-to-r from-white via-[#ccc] to-white border-none h-[1.2px]">
+            </div>
+        </section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium explicabo modi fuga impedit ea perferendis
+        aliquam at quae necessitatibus placeat qui, perspiciatis possimus similique ad neque aperiam tempore in corrupti
+        repudiandae blanditiis error soluta? Fugit, illo itaque quisquam recusandae delectus debitis reprehenderit saepe
+        ex corporis aperiam architecto, necessitatibus hic distinctio quasi assumenda amet voluptatem accusamus
+        doloribus labore ea excepturi ipsa ut mollitia. Labore impedit sit amet odit eveniet eius excepturi suscipit
+        aperiam, in, porro tempora a nostrum? Dolores, aspernatur? Consequatur excepturi error reprehenderit nam nemo!
+        Corrupti quidem pariatur amet, nihil dolores reprehenderit! Consectetur perspiciatis rem amet aliquam libero,
+        nam tempora perferendis vel quas odit necessitatibus est dolorem obcaecati magnam distinctio enim qui inventore
+        officia suscipit! Velit adipisci aliquid modi illo laborum vitae suscipit hic aspernatur autem culpa facilis
+        doloribus, dolorum ullam consectetur ab enim similique cum saepe pariatur debitis consequuntur dolorem. Aut
+        minima consequatur perferendis molestias error numquam, repellendus corporis delectus ipsa minus suscipit totam
+        labore. Beatae facere harum distinctio, voluptas sapiente obcaecati ipsum mollitia magni! Voluptatum neque
+        quasi, omnis vel incidunt cum totam obcaecati architecto? Similique dolor provident aliquam doloribus quas illo,
+        culpa labore mollitia, earum aliquid consectetur quo unde? Numquam dolorum, ratione iure tempore officiis ab rem
+        labore.
     </main>
     <footer>
 
